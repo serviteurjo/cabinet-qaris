@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Découvrez les événements du Cabinet QARIS : formations, ateliers et événements sur l'accompagnement relationnel et le développement personnel.">
+  <meta name="keywords" content="formations QARIS, ateliers, événements, développement personnel, accompagnement">
+  <meta name="author" content="Cabinet QARIS">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.qaris.fr/formations/">
+  <meta property="og:title" content="Cabinet QARIS — Formations, ateliers & événements">
+  <meta property="og:description" content="Participez aux formations et ateliers du Cabinet QARIS pour améliorer vos compétences relationnelles. Inscrivez-vous dès maintenant.">
+  <meta property="og:image" content="https://www.qaris.fr/assets/images/logo-quaris.png">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://www.qaris.fr/formations/">
+  <meta property="twitter:title" content="Cabinet QARIS — Formations, ateliers & événements">
+  <meta property="twitter:description" content="Participez aux formations et ateliers du Cabinet QARIS pour améliorer vos compétences relationnelles. Inscrivez-vous dès maintenant.">
+  <meta property="twitter:image" content="https://www.qaris.fr/assets/images/logo-quaris.png">
+  
+  <!-- Canonical (placeholder - remplacer par le domaine final) -->
+  <link rel="canonical" href="https://example.com/formations/">
+
+  <title>Cabinet QARIS — Formations, ateliers & événements</title>
+  
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="icon" type="image/png" href="../assets/images/logo-quaris.png">
+  <!-- Preconnect to CDN -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <!-- Font Awesome 6.5.0 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Cabinet QARIS",
+    "url": "https://www.qaris.fr/",
+    "logo": "https://www.qaris.fr/assets/images/logo-quaris.png",
+    "telephone": "+22951801000",
+    "email": "contact@qaris.fr",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 Avenue de la Paix",
+      "addressLocality": "Paris",
+      "postalCode": "75000",
+      "addressCountry": "FR"
+    },
+    "sameAs": [
+      "https://www.facebook.com/djomionkede.solange.houngbo",
+      "https://www.instagram.com/djomionkede/",
+      "https://wa.me/22951801000"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="navbar" role="banner">
+    <div class="navbar-container">
+      <a href="../index.html" class="navbar-logo" aria-label="Accueil Cabinet QARIS">
+        <img src="../assets/images/logo-quaris.png" alt="Logo Cabinet QARIS" width="50" height="50" loading="eager" decoding="async">
+        <span class="navbar-logo-text"></span>
+      </a>
+      
+      <nav id="navbar-menu" class="navbar-menu" role="navigation" aria-label="Navigation principale">
+        <a href="../index.html" class="navbar-link">Accueil</a>
+        <a href="../a-propos.html" class="navbar-link">À propos</a>
+        <a href="index.html" class="navbar-link is-active" aria-current="page">Événements</a>
+        <a href="../contact.html" class="navbar-link">Contact</a>
+      </nav>
+      
+      <button class="navbar-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navbar-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main role="main">
+    <!-- Hero Section -->
+    <section class="section bg-gradient-warm" style="padding-top: 120px;" aria-labelledby="events-title">
+      <div class="container">
+        <div class="section-header">
+          <h1 id="events-title" class="section-title">Événements du Cabinet QARIS</h1>
+          <p class="section-subtitle">Formations, ateliers et événements pour votre épanouissement personnel et relationnel</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events Filter Section -->
+    <section class="section bg-white" aria-labelledby="events-filter-title">
+      <div class="container">
+        <div class="events-filter-section">
+          <h2 id="events-filter-title" class="events-filter-title">Types d'Événements</h2>
+          <div class="events-filter-line"></div>
+          
+          <div class="events-tabs" role="tablist" aria-label="Filtrer par type">
+            <button class="tab-btn is-active" role="tab" aria-selected="true" data-filter="all" id="tab-all">
+              Toutes
+            </button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-filter="formation" id="tab-formations">
+              Formations
+            </button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-filter="evenement" id="tab-evenements">
+              Événements
+            </button>
+          </div>
+        </div>
+
+        <!-- All Events Grid -->
+        <div class="events-grid" id="all-events-grid">
+
+          <!-- FORMATIONS -->
+          <article class="event-card" data-type="formation">
+            <div class="event-image-wrapper">
+              <span class="event-badge event-badge-formation">Formation</span>
+              <img src="../assets/images/formation-couples.jpg" alt="Formation Communication Couple" class="event-image" loading="lazy" decoding="async">
+            </div>
+            <div class="event-content">
+              <div class="event-date">
+                <span aria-hidden="true">📅</span>
+                <time datetime="2026-03-14">14 mars 2026</time>
+              </div>
+              <h4 class="event-title">Formations pour couples</h4>
+              <p class="event-description">Un programme pratique pour restaurer le dialogue, renforcer la confiance et consolider l'union.</p>
+              <p class="event-text">Inspirée de l'approche QARIS, cette formation combine écoute, exercices guidés et outils de communication bienveillante pour des résultats durables.</p>
+              <div class="event-meta">
+                <span class="event-price">450 €</span>
+                <a href="../contact.html#contact-form" class="btn btn-primary btn-sm" data-training-id="1">S'inscrire</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="event-card" data-type="formation">
+            <div class="event-image-wrapper">
+              <span class="event-badge event-badge-formation">Formation</span>
+              <img src="../assets/images/formation-parentalite.jpg" alt="Formation pour célibataires" class="event-image" loading="lazy" decoding="async">
+            </div>
+            <div class="event-content">
+              <div class="event-date">
+                <span aria-hidden="true">📅</span>
+                <time datetime="2026-04-12">12 avril 2026</time>
+              </div>
+              <h4 class="event-title">Formations des célibataires</h4>
+              <p class="event-description">Un parcours de préparation au mariage centré sur la maturité affective, les valeurs et la vision du couple.</p>
+              <p class="event-text">Le contenu aide à guérir les blessures relationnelles, clarifier les choix et bâtir des bases solides avant l'engagement.</p>
+              <div class="event-meta">
+                <span class="event-price">380 €</span>
+                <a href="../contact.html#contact-form" class="btn btn-primary btn-sm" data-training-id="2">S'inscrire</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="event-card" data-type="formation">
+            <div class="event-image-wrapper">
+              <span class="event-badge event-badge-formation">Formation</span>
+              <img src="../assets/images/formation-coaching.jpg" alt="Séminaires prénuptiaux" class="event-image" loading="lazy" decoding="async">
+            </div>
+            <div class="event-content">
+              <div class="event-date">
+                <span aria-hidden="true">📅</span>
+                <time datetime="2026-05-10">10 mai 2026</time>
+              </div>
+              <h4 class="event-title">Séminaires prénuptiaux</h4>
+              <p class="event-description">Une préparation émotionnelle, spirituelle et organisationnelle pour entrer sereinement dans la vie conjugale.</p>
+              <p class="event-text">Les séminaires abordent la gestion des attentes, la résolution des tensions et la construction d'un projet de couple aligné.</p>
+              <div class="event-meta">
+                <span class="event-price">50 €</span>
+                <a href="../contact.html#contact-form" class="btn btn-primary btn-sm" data-training-id="3">S'inscrire</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="event-card" data-type="formation">
+            <div class="event-image-wrapper">
+              <span class="event-badge event-badge-formation">Formation</span>
+              <img src="../assets/images/formation-developpement.jpg" alt="Ateliers parentaux" class="event-image" loading="lazy" decoding="async">
+            </div>
+            <div class="event-content">
+              <div class="event-date">
+                <span aria-hidden="true">📅</span>
+                <time datetime="2026-06-07">07 juin 2026</time>
+              </div>
+              <h4 class="event-title">Ateliers Parentaux</h4>
+              <p class="event-description">Des ateliers concrets pour accompagner les parents dans l'éducation, l'autorité bienveillante et la communication familiale.</p>
+              <p class="event-text">QARIS propose des méthodes applicables au quotidien pour réduire les conflits et renforcer la cohésion au sein du foyer.</p>
+              <div class="event-meta">
+                <span class="event-price">70 €</span>
+                <a href="../contact.html#contact-form" class="btn btn-primary btn-sm" data-training-id="4">S'inscrire</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="event-card" data-type="formation">
+            <div class="event-image-wrapper">
+              <span class="event-badge event-badge-formation">Formation</span>
+              <img src="../assets/images/formation-communication.jpg" alt="Sessions pour leaders" class="event-image" loading="lazy" decoding="async">
+            </div>
+            <div class="event-content">
+              <div class="event-date">
+                <span aria-hidden="true">📅</span>
+                <time datetime="2026-07-05">05 juillet 2026</time>
+              </div>
+              <h4 class="event-title">Sessions pour leaders</h4>
+              <p class="event-description">Un espace de formation pour leaders et hommes de foi autour de l'équilibre personnel, émotionnel et ministériel.</p>
+              <p class="event-text">Ces sessions renforcent la résilience, la posture de leadership et la qualité de l'accompagnement des communautés.</p>
+              <div class="event-meta">
+                <span class="event-price">50 €</span>
+                <a href="../contact.html#contact-form" class="btn btn-primary btn-sm" data-training-id="5">S'inscrire</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ÉVÉNEMENTS -->
+          <article class="event-card" data-type="evenement">
+            <div class="event-image-wrapper">
+              <span class="event-badge event-badge-evenement">Événement</span>
+              <img src="../assets/images/evenement-conference.jpg" alt="JIFF - Journée d'Impact des Femmes de Foi" class="event-image" loading="lazy" decoding="async">
+            </div>
+            <div class="event-content">
+              <div class="event-date">
+                <span aria-hidden="true">📅</span>
+                <time datetime="2026-03-08">08 mars 2026</time>
+              </div>
+              <h4 class="event-title">JIFF : Journée d'Impact des Femmes de Foi</h4>
+              <p class="event-description">Un rassemblement d'inspiration, de transmission et d'activation pour les femmes engagées dans leur appel.</p>
+              <p class="event-text">Au programme: enseignements, témoignages et outils pratiques pour conjuguer foi, famille, leadership et mission.</p>
+              <div class="event-meta">
+                <span class="event-price">Gratuit</span>
+                <a href="../contact.html#contact-form" class="btn btn-primary btn-sm" data-event-id="1">S'inscrire</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="event-card" data-type="evenement">
+            <div class="event-image-wrapper">
+              <span class="event-badge event-badge-evenement">Événement</span>
+              <img src="../assets/images/evenement-retraite.jpg" alt="WEAM - Camp des Messagères" class="event-image" loading="lazy" decoding="async">
+            </div>
+            <div class="event-content">
+              <div class="event-date">
+                <span aria-hidden="true">📅</span>
+                <time datetime="2026-08-17">17 au 22 août 2026</time>
+              </div>
+              <h4 class="event-title">WEAM : Camp des Messagères</h4>
+              <p class="event-description">Une expérience immersive de ressourcement, de croissance personnelle et de développement spirituel.</p>
+              <p class="event-text">Le camp favorise la guérison intérieure, la clarté de vision et le renforcement des relations dans un cadre structuré.</p>
+              <div class="event-meta">
+                <span class="event-price">30 €</span>
+                <a href="../contact.html#contact-form" class="btn btn-primary btn-sm" data-event-id="2">S'inscrire</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="event-card" data-type="evenement">
+            <div class="event-image-wrapper">
+              <span class="event-badge event-badge-evenement">Événement</span>
+              <img src="../assets/images/evenement-rencontre.jpg" alt="Conférence Grâce et Amour" class="event-image" loading="lazy" decoding="async">
+            </div>
+            <div class="event-content">
+              <div class="event-date">
+                <span aria-hidden="true">📅</span>
+                <time datetime="2026-10-17">17 octobre 2026</time>
+              </div>
+              <h4 class="event-title">Conférence Grâce &amp; Amour</h4>
+              <p class="event-description">Une conférence relationnelle pour couples, fiancés et célibataires autour des fondements d'une relation saine.</p>
+              <p class="event-text">Interventions, échanges et orientations pratiques pour mieux aimer, mieux communiquer et mieux construire.</p>
+              <div class="event-meta">
+                <span class="event-price">Gratuit</span>
+                <a href="../contact.html#contact-form" class="btn btn-primary btn-sm" data-event-id="3">S'inscrire</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="event-card" data-type="evenement">
+            <div class="event-image-wrapper">
+              <span class="event-badge event-badge-evenement">Événement</span>
+              <img src="../assets/images/evenement-atelier.jpg" alt="Diner Divin pour couples maries" class="event-image" loading="lazy" decoding="async">
+            </div>
+            <div class="event-content">
+              <div class="event-date">
+                <span aria-hidden="true">📅</span>
+                <time datetime="2026-12-19">19 décembre 2026</time>
+              </div>
+              <h4 class="event-title">DÎNER DIVIN</h4>
+              <p class="event-description">Un rendez-vous exclusif pour couples mariés dédié au renouvellement de l'alliance et de la complicité.</p>
+              <p class="event-text">Dans une atmosphère élégante et encadrée, les participants vivent un temps de connexion, de dialogue et d'édification.</p>
+              <div class="event-meta">
+                <span class="event-price">Gratuit</span>
+                <a href="../contact.html#contact-form" class="btn btn-primary btn-sm" data-event-id="4">S'inscrire</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Past Events Section -->
+    <section class="section bg-cream" aria-labelledby="past-events-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="past-events-title" class="section-title">Retour aux événements passés</h2>
+          <p class="section-subtitle">Revivez les temps forts des initiatives du Cabinet QARIS : des espaces de formation, de transformation et d'impact où jeunes, couples et familles grandissent avec des repères concrets pour une vie relationnelle équilibrée.</p>
+        </div>
+
+        <div class="past-events-grid">
+          <article class="card past-event-card">
+            <div class="card-carousel past-event-carousel" data-card-carousel>
+              <img src="../assets/images/past-events-camp-2023-01.jpg" alt="Moment fort du Camp des Jeunes Filles 2023 à Abomey-Calavi 1" class="card-image card-carousel-slide is-active" data-carousel-slide loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../assets/images/evenement-retraite.jpg';">
+              <img src="../assets/images/past-events-camp-2023-02.jpg" alt="Moment fort du Camp des Jeunes Filles 2023 à Abomey-Calavi 2" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../assets/images/evenement-retraite.jpg';">
+              <img src="../assets/images/past-events-camp-2023-03.jpg" alt="Moment fort du Camp des Jeunes Filles 2023 à Abomey-Calavi 3" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../assets/images/evenement-retraite.jpg';">
+              <img src="../assets/images/past-events-camp-2023-04.jpg" alt="Moment fort du Camp des Jeunes Filles 2023 à Abomey-Calavi 4" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../assets/images/evenement-retraite.jpg';">
+              <img src="../assets/images/past-events-camp-2023-05.jpg" alt="Moment fort du Camp des Jeunes Filles 2023 à Abomey-Calavi 5" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../assets/images/evenement-retraite.jpg';">
+              <img src="../assets/images/past-events-camp-2023-06.jpg" alt="Moment fort du Camp des Jeunes Filles 2023 à Abomey-Calavi 6" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../assets/images/evenement-retraite.jpg';">
+              <img src="../assets/images/past-events-camp-2023-07.jpg" alt="Moment fort du Camp des Jeunes Filles 2023 à Abomey-Calavi 7" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../assets/images/evenement-retraite.jpg';">
+              <img src="../assets/images/past-events-camp-2023-08.jpg" alt="Moment fort du Camp des Jeunes Filles 2023 à Abomey-Calavi 8" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../assets/images/evenement-retraite.jpg';">
+              <img src="../assets/images/past-events-camp-2023-09.jpg" alt="Moment fort du Camp des Jeunes Filles 2023 à Abomey-Calavi 9" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../assets/images/evenement-retraite.jpg';">
+              <img src="../assets/images/past-events-camp-2023-10.jpg" alt="Moment fort du Camp des Jeunes Filles 2023 à Abomey-Calavi 10" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../assets/images/evenement-retraite.jpg';">
+              <img src="../assets/images/past-events-camp-2023-11.jpg" alt="Moment fort du Camp des Jeunes Filles 2023 à Abomey-Calavi 11" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../assets/images/evenement-retraite.jpg';">
+              <img src="../assets/images/past-events-camp-2023-12.jpg" alt="Moment fort du Camp des Jeunes Filles 2023 à Abomey-Calavi 12" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../assets/images/evenement-retraite.jpg';">
+              <img src="../assets/images/past-events-camp-2023-012.jpg" alt="Moment fort du Camp des Jeunes Filles 2023 à Abomey-Calavi 13" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../assets/images/evenement-retraite.jpg';">
+              <img src="../assets/images/past-events-camp-2023-13.jpg" alt="Moment fort du Camp des Jeunes Filles 2023 à Abomey-Calavi 14" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../assets/images/evenement-retraite.jpg';">
+              <img src="../assets/images/past-events-camp-2023-14.jpg" alt="Moment fort du Camp des Jeunes Filles 2023 à Abomey-Calavi 15" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../assets/images/evenement-retraite.jpg';">
+              <img src="../assets/images/past-events-camp-2023-15.jpg" alt="Moment fort du Camp des Jeunes Filles 2023 à Abomey-Calavi 16" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../assets/images/evenement-retraite.jpg';">
+              <img src="../assets/images/past-events-camp-2023-16.jpg" alt="Moment fort du Camp des Jeunes Filles 2023 à Abomey-Calavi 17" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../assets/images/evenement-retraite.jpg';">
+              <img src="../assets/images/past-events-camp-2023-17.jpg" alt="Moment fort du Camp des Jeunes Filles 2023 à Abomey-Calavi 18" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../assets/images/evenement-retraite.jpg';">
+              <img src="../assets/images/past-events-camp-2023-18.jpg" alt="Moment fort du Camp des Jeunes Filles 2023 à Abomey-Calavi 19" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../assets/images/evenement-retraite.jpg';">
+              <img src="../assets/images/past-events-camp-2023-19.jpg" alt="Moment fort du Camp des Jeunes Filles 2023 à Abomey-Calavi 20" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../assets/images/evenement-retraite.jpg';">
+              
+              <button class="card-carousel-btn card-carousel-btn--prev" type="button" aria-label="Image précédente" data-carousel-prev>
+                <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+              </button>
+              <button class="card-carousel-btn card-carousel-btn--next" type="button" aria-label="Image suivante" data-carousel-next>
+                <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+              </button>
+              <button class="card-carousel-btn card-carousel-btn--zoom" type="button" aria-label="Agrandir l'image" data-carousel-zoom>
+                <i class="fa-solid fa-up-right-and-down-left-from-center" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title past-event-title">CAMP DES JEUNES FILLES, Août 2023 à Abomey-Calavi</h3>
+              <p class="card-text past-event-description">Au cours de ce camp, les jeunes filles ont découvert leurs valeurs, développé leur esprit entrepreneurial, appris à prendre soin de leur corps et se sont engagées dans des actions positives et utiles.</p>
+            </div>
+          </article>
+
+          <article class="card past-event-card">
+            <div class="card-carousel past-event-carousel" data-card-carousel>
+              <img src="../assets/images/past-events-camp-mixte-2025-01.jpg" alt="Moment fort du Camp Mixte Jeunes Hommes et Femmes 2025 à Abomey-Calavi 1" class="card-image card-carousel-slide is-active" data-carousel-slide loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../assets/images/evenement-retraite.jpg';">
+              <img src="../assets/images/past-events-camp-mixte-2025-02.jpg" alt="Moment fort du Camp Mixte Jeunes Hommes et Femmes 2025 à Abomey-Calavi 2" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../assets/images/evenement-retraite.jpg';">
+              <img src="../assets/images/past-events-camp-mixte-2025-03.jpg" alt="Moment fort du Camp Mixte Jeunes Hommes et Femmes 2025 à Abomey-Calavi 3" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../assets/images/evenement-retraite.jpg';">
+              <img src="../assets/images/past-events-camp-mixte-2025-04.jpg" alt="Moment fort du Camp Mixte Jeunes Hommes et Femmes 2025 à Abomey-Calavi 4" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../assets/images/evenement-retraite.jpg';">
+              <img src="../assets/images/past-events-camp-mixte-2025-05.jpg" alt="Moment fort du Camp Mixte Jeunes Hommes et Femmes 2025 à Abomey-Calavi 5" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../assets/images/evenement-retraite.jpg';">
+              <img src="../assets/images/past-events-camp-mixte-2025-06.jpg" alt="Moment fort du Camp Mixte Jeunes Hommes et Femmes 2025 à Abomey-Calavi 6" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../assets/images/evenement-retraite.jpg';">
+              <img src="../assets/images/past-events-camp-mixte-2025-07.jpg" alt="Moment fort du Camp Mixte Jeunes Hommes et Femmes 2025 à Abomey-Calavi 7" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../assets/images/evenement-retraite.jpg';">
+              
+              <button class="card-carousel-btn card-carousel-btn--prev" type="button" aria-label="Image précédente" data-carousel-prev>
+                <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+              </button>
+              <button class="card-carousel-btn card-carousel-btn--next" type="button" aria-label="Image suivante" data-carousel-next>
+                <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+              </button>
+              <button class="card-carousel-btn card-carousel-btn--zoom" type="button" aria-label="Agrandir l'image" data-carousel-zoom>
+                <i class="fa-solid fa-up-right-and-down-left-from-center" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title past-event-title">CAMP MIXTE JEUNES HOMMES ET FEMMES, Abomey-Calavi Août 2025</h3>
+              <p class="card-text past-event-description">Au cours de ce camp, des jeunes filles et des jeunes hommes ont été initiés à des valeurs entrepreneuriales et ont participé à des activités pratiques et créatives comme : le repassage, la fabrication de sacs à partir de tissus recyclés, la confection d’objets à base de perles et des cours d’initiation au numérique. </p>
+              <p class="card-text past-event-description">Ces expériences leur ont permis de développer leur créativité, leur autonomie et leur sens des responsabilités tout en apprenant à devenir des jeunes capables d’avoir un impact positif dans la société et de mener une vie sereine.</p>
+            </div>
+          </article>
+
+          <article class="card past-event-card">
+            <div class="card-carousel past-event-carousel" data-card-carousel>
+              <img src="../assets/images/past-events-jiff-2025-01.jpg" alt="Moment fort de la Journée d'Impact des Femmes de Foi 2025 à Abomey-Calavi 1" class="card-image card-carousel-slide is-active" data-carousel-slide loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../assets/images/evenement-conference.jpg';">
+              <img src="../assets/images/past-events-jiff-2025-02.jpg" alt="Moment fort de la Journée d'Impact des Femmes de Foi 2025 à Abomey-Calavi 2" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../assets/images/evenement-conference.jpg';">
+              <img src="../assets/images/past-events-jiff-2025-03.jpg" alt="Moment fort de la Journée d'Impact des Femmes de Foi 2025 à Abomey-Calavi 3" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../assets/images/evenement-conference.jpg';">
+              <img src="../assets/images/past-events-jiff-2025-04.jpg" alt="Moment fort de la Journée d'Impact des Femmes de Foi 2025 à Abomey-Calavi 4" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../assets/images/evenement-conference.jpg';">
+              <img src="../assets/images/past-events-jiff-2025-05.jpg" alt="Moment fort de la Journée d'Impact des Femmes de Foi 2025 à Abomey-Calavi 5" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../assets/images/evenement-conference.jpg';">
+              <img src="../assets/images/past-events-jiff-2025-06.jpg" alt="Moment fort de la Journée d'Impact des Femmes de Foi 2025 à Abomey-Calavi 6" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../assets/images/evenement-conference.jpg';">
+              
+              <button class="card-carousel-btn card-carousel-btn--prev" type="button" aria-label="Image précédente" data-carousel-prev>
+                <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+              </button>
+              <button class="card-carousel-btn card-carousel-btn--next" type="button" aria-label="Image suivante" data-carousel-next>
+                <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+              </button>
+              <button class="card-carousel-btn card-carousel-btn--zoom" type="button" aria-label="Agrandir l'image" data-carousel-zoom>
+                <i class="fa-solid fa-up-right-and-down-left-from-center" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title past-event-title">Journée d'Impact des Femmes de Foi, Abomey-Calavi, 08 Mars 2025, 09h-16h</h3>
+              <p class="card-text past-event-description">Dans le cadre de la Journée internationale de la femme, le 8 mars 2025, le cabinet Qaris a organisé, de 9h à 16h, un rassemblement pour de jeunes filles et jeunes femmes dans un cadre chaleureux et inspirant. </p>
+              <p class="card-text past-event-description">Entre méditation, jeux et activités manuelles, elles ont exploré la valeur de la femme dans sa communauté et dans la société, et réfléchi à la manière dont chacune peut briller là où elle est appelée à être. </p>
+              <p class="card-text past-event-description">Une matinée intense, riche en émotions et en sens. </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section - Stretched to footer -->
+    <section class="events-cta bg-primary" aria-labelledby="cta-events-title">
+      <div class="events-cta__inner">
+        <div class="section-header" style="margin-bottom: 0;">
+          <h2 id="cta-events-title" class="section-title text-white" style="text-shadow: 0 2px 10px rgba(0,0,0,0.2);">Une question ?</h2>
+          <p class="section-subtitle" style="color: rgba(255,255,255,0.95); text-shadow: 0 1px 5px rgba(0,0,0,0.15);">N'hésitez pas à nous contacter pour toute question sur nos événements.</p>
+          <div class="hero-cta" style="margin-top: 2rem;">
+            <a href="../contact.html" class="btn btn-secondary btn-lg">Nous contacter</a>
+            <a href="tel:+33123456789" class="btn btn-ghost-on-primary btn-lg">Appeler</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Registration Modal (hidden by default) -->
+    <div id="registration-modal" class="hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-overlay"></div>
+      <div class="modal-content qaris-registration-modal">
+        <button class="modal-close" aria-label="Fermer">&times;</button>
+        <h3 id="modal-title">Formulaire d'inscription</h3>
+
+        <div class="registration-summary-card" aria-live="polite">
+          <p class="registration-summary-label">Vous vous inscrivez à :</p>
+          <h4 id="reg-selected-title" class="registration-summary-title">Événement</h4>
+          <div class="registration-summary-meta">
+            <span id="reg-selected-type" class="status-badge status-active">Formation</span>
+            <span id="reg-selected-price" class="registration-summary-price">Gratuit</span>
+          </div>
+        </div>
+
+        <form id="registration-form">
+          <div class="grid grid-2">
+            <div class="form-group">
+              <label for="reg-firstName" class="form-label">Nom *</label>
+              <input type="text" id="reg-firstName" name="firstName" class="form-input" required>
+            </div>
+            <div class="form-group">
+              <label for="reg-lastName" class="form-label">Prénom *</label>
+              <input type="text" id="reg-lastName" name="lastName" class="form-input" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="reg-contactInfo" class="form-label">Email/Téléphone *</label>
+            <input type="text" id="reg-contactInfo" name="contactInfo" class="form-input" required placeholder="ex: nom@mail.com ou 01 51 80 10 00">
+          </div>
+
+          <div class="form-group">
+            <label for="reg-phone" class="form-label">Téléphone WhatsApp (optionnel)</label>
+            <input type="tel" id="reg-phone" name="phone" class="form-input" placeholder="ex: 01 51 80 10 00">
+          </div>
+
+          <div class="form-group">
+            <label for="reg-message" class="form-label">Message (optionnel)</label>
+            <textarea id="reg-message" name="message" class="form-textarea" rows="3" placeholder="Ajoutez un commentaire si nécessaire..."></textarea>
+          </div>
+
+          <section id="reg-payment-section" class="payment-section" aria-labelledby="payment-title">
+            <h4 id="payment-title" class="payment-section-title">Passez au Paiement</h4>
+            <p class="payment-help">
+              Effectuez votre paiement au numéro admin :
+              <strong class="payment-number">01 51 80 10 00</strong>
+            </p>
+
+            <div class="form-group">
+              <label for="reg-payment-reference" class="form-label">Référence du Paiement *</label>
+              <input type="text" id="reg-payment-reference" name="paymentReference" class="form-input" placeholder="Ex: TRX-2026-000123">
+            </div>
+          </section>
+
+          <div id="reg-free-note" class="hidden free-registration-note" role="note">
+            Cet événement est gratuit : aucune référence de paiement n'est requise.
+          </div>
+
+          <div class="form-group">
+            <div class="form-checkbox-wrapper">
+              <input type="checkbox" id="reg-consent" name="consent" class="form-checkbox" required>
+              <label for="reg-consent" class="form-checkbox-label">
+                J'accepte que mes données soient traitées conformément à la politique de confidentialité. *
+              </label>
+            </div>
+          </div>
+
+          <input type="hidden" id="reg-event-id" name="eventId">
+          <input type="hidden" id="reg-event-type" name="eventType">
+          <input type="hidden" id="reg-event-title" name="eventTitle">
+          <input type="hidden" id="reg-event-price" name="eventPrice">
+          <input type="hidden" id="reg-is-free" name="isFree">
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Envoyer mon inscription</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Info Request Modal (hidden by default) -->
+    <div id="info-modal" class="hidden" role="dialog" aria-modal="true" aria-labelledby="info-modal-title">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Fermer">&times;</button>
+        <h3 id="info-modal-title">Demande d'information</h3>
+        <form id="info-form">
+          <div class="form-group">
+            <label for="info-firstName" class="form-label">Prénom *</label>
+            <input type="text" id="info-firstName" name="firstName" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label for="info-lastName" class="form-label">Nom *</label>
+            <input type="text" id="info-lastName" name="lastName" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label for="info-email" class="form-label">Email *</label>
+            <input type="email" id="info-email" name="email" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label for="info-message" class="form-label">Message</label>
+            <textarea id="info-message" name="message" class="form-textarea" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <div class="form-checkbox-wrapper">
+              <input type="checkbox" id="info-consent" name="consent" class="form-checkbox" required>
+              <label for="info-consent" class="form-checkbox-label">
+                J'accepte que mes données soient traitées conformément à la politique de confidentialité. *
+              </label>
+            </div>
+          </div>
+          <input type="hidden" id="info-event-id" name="eventId">
+          <input type="hidden" id="info-event-type" name="eventType">
+          <button type="submit" class="btn btn-accent" style="width: 100%;">Envoyer ma demande</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <div class="image-lightbox" data-lightbox hidden aria-hidden="true">
+    <button class="image-lightbox__backdrop" type="button" aria-label="Fermer la visualisation" data-lightbox-close></button>
+    <div class="image-lightbox__dialog" role="dialog" aria-modal="true" aria-label="Visualisation des moments forts des événements passés">
+      <button class="image-lightbox__close" type="button" aria-label="Fermer l'image agrandie" data-lightbox-close>
+        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+      </button>
+      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="" class="image-lightbox__image" data-lightbox-image loading="eager" decoding="async">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="../assets/images/logo-quaris.png" alt="Logo Cabinet QARIS" loading="lazy" decoding="async">
+          <p>Le Cabinet QARIS vous accompagne avec bienveillance et professionnalisme dans vos parcours de vie, relationnels et de développement personnel.</p>
+          <div class="footer-social">
+            <h4 class="footer-title">Réseaux sociaux</h4>
+            <div class="footer-social__icons">
+              <a href="https://www.facebook.com/share/1FBMDrUS41/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer-social__icon"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/djomionkede/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer-social__icon"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://wa.me/message/RLCUEKQFPC22B1" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="footer-social__icon"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-links-wrapper">
+          <h4 class="footer-title">Liens rapides</h4>
+          <nav class="footer-links" aria-label="Liens rapides">
+            <a href="../index.html">Accueil</a>
+            <a href="../a-propos.html">À propos</a>
+            <a href="index.html">Événements</a>
+            <a href="../contact.html">Contact</a>
+          </nav>
+        </div>
+        
+        <div class="footer-links-wrapper">
+          <h4 class="footer-title">Notre accompagnement</h4>
+          <nav class="footer-links" aria-label="Nos services">
+            <!-- Fiabilité: chemins relatifs corrigés depuis /formations/ pour éviter les 404 -->
+            <a href="../contact.html">Accompagnement couples</a>
+            <a href="../contact.html">Accompagnement familial</a>
+            <a href="../contact.html">Coaching jeunes</a>
+            <a href="index.html">Formations</a>
+          </nav>
+        </div>
+        
+        <div class="footer-contact">
+          <h4 class="footer-title">Contact</h4>
+          <p><span aria-hidden="true">📍</span> Calavi-Tankpè, Nouveau tronçon Tankpè-Aïtchédji, 3e Rue à gauche</p>
+          <p><span aria-hidden="true">📞</span> +229 01 51 80 10 00</p>
+          <p><span aria-hidden="true">✉️</span> cabinetqaris@gmail.com</p>
+          <p><span aria-hidden="true">🕐</span> Lun-Ven: 9h-16h</p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 Cabinet QARIS. Tous droits réservés.</p>
+        <nav class="footer-bottom-links" aria-label="Mentions légales">
+          <a href="#">Mentions légales</a>
+          <a href="#">Politique de confidentialité</a>
+          <a href="#">CGV</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/config.js" type="module"></script>
+  <script src="../js/supabaseClient.js" type="module"></script>
+  <script src="../js/trainings.js" type="module"></script>
+  <script src="../js/registrations.js" type="module"></script>
+  <script>
+    // Mobile menu toggle
+    document.addEventListener('DOMContentLoaded', function() {
+      const navbarToggle = document.querySelector('.navbar-toggle');
+      const navbarMenu = document.querySelector('.navbar-menu');
+      
+      if (navbarToggle && navbarMenu) {
+        navbarToggle.addEventListener('click', function() {
+          navbarMenu.classList.toggle('is-open');
+          navbarToggle.classList.toggle('is-active');
+          const isOpen = navbarMenu.classList.contains('is-open');
+          navbarToggle.setAttribute('aria-expanded', isOpen);
+          navbarToggle.setAttribute('aria-label', isOpen ? 'Fermer le menu' : 'Ouvrir le menu');
+        });
+        
+        // Fermer le menu quand on clique sur un lien
+        const navLinks = navbarMenu.querySelectorAll('.navbar-link');
+        navLinks.forEach(function(link) {
+          link.addEventListener('click', function() {
+            navbarMenu.classList.remove('is-open');
+            navbarToggle.classList.remove('is-active');
+            navbarToggle.setAttribute('aria-expanded', 'false');
+            navbarToggle.setAttribute('aria-label', 'Ouvrir le menu');
+          });
+        });
+      }
+    });
+    
+    // Events filter functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      // Fiabilité/perf: ne pas dupliquer la logique déjà gérée par js/trainings.js.
+      if (window.__qarisEventsTabsManagedByModule) {
+        return;
+      }
+      const filterButtons = document.querySelectorAll('.tab-btn');
+      const eventCards = document.querySelectorAll('.event-card');
+      
+      filterButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+          const filter = this.getAttribute('data-filter');
+          
+          // Update active button
+          filterButtons.forEach(function(btn) {
+            btn.classList.remove('is-active');
+            btn.setAttribute('aria-selected', 'false');
+          });
+          this.classList.add('is-active');
+          this.setAttribute('aria-selected', 'true');
+          
+          // Filter cards
+          eventCards.forEach(function(card) {
+            if (filter === 'all' || card.getAttribute('data-type') === filter) {
+              card.style.display = '';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+
+    // Past events carousel + lightbox
+    document.addEventListener('DOMContentLoaded', function() {
+      const carousels = Array.from(document.querySelectorAll('[data-card-carousel]'));
+      const lightbox = document.querySelector('[data-lightbox]');
+      const lightboxImage = lightbox ? lightbox.querySelector('[data-lightbox-image]') : null;
+      const lightboxCloseButtons = lightbox ? Array.from(lightbox.querySelectorAll('[data-lightbox-close]')) : [];
+      let lastZoomButton = null;
+
+      const closeLightbox = function() {
+        if (!lightbox || lightbox.hidden) {
+          return;
+        }
+        lightbox.hidden = true;
+        lightbox.setAttribute('aria-hidden', 'true');
+        if (lightboxImage) {
+          lightboxImage.src = '';
+          lightboxImage.alt = '';
+        }
+        document.body.classList.remove('lightbox-open');
+        if (lastZoomButton) {
+          lastZoomButton.focus();
+        }
+      };
+
+      const openLightbox = function(slide, zoomButton) {
+        if (!lightbox || !lightboxImage || !slide) {
+          return;
+        }
+        lightboxImage.src = slide.currentSrc || slide.src;
+        lightboxImage.alt = slide.alt || 'Image agrandie';
+        lightbox.hidden = false;
+        lightbox.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('lightbox-open');
+        lastZoomButton = zoomButton || null;
+      };
+
+      if (lightbox) {
+        lightboxCloseButtons.forEach(function(button) {
+          button.addEventListener('click', closeLightbox);
+        });
+
+        document.addEventListener('keydown', function(event) {
+          if (event.key === 'Escape') {
+            closeLightbox();
+          }
+        });
+      }
+
+      carousels.forEach(function(carousel) {
+        const carouselSlides = Array.from(carousel.querySelectorAll('[data-carousel-slide]'));
+        const previousButton = carousel.querySelector('[data-carousel-prev]');
+        const nextButton = carousel.querySelector('[data-carousel-next]');
+        const zoomButton = carousel.querySelector('[data-carousel-zoom]');
+        let activeCarouselSlide = carouselSlides.findIndex(function(slide) {
+          return slide.classList.contains('is-active');
+        });
+
+        if (activeCarouselSlide < 0) {
+          activeCarouselSlide = 0;
+        }
+
+        const showCarouselSlide = function(index) {
+          carouselSlides.forEach(function(slide, slideIndex) {
+            slide.classList.toggle('is-active', slideIndex === index);
+          });
+          activeCarouselSlide = index;
+        };
+
+        if (carouselSlides.length < 2) {
+          carousel.classList.add('is-single-slide');
+        } else {
+          showCarouselSlide(activeCarouselSlide);
+
+          if (previousButton) {
+            previousButton.addEventListener('click', function() {
+              const previousIndex = (activeCarouselSlide - 1 + carouselSlides.length) % carouselSlides.length;
+              showCarouselSlide(previousIndex);
+            });
+          }
+
+          if (nextButton) {
+            nextButton.addEventListener('click', function() {
+              const nextIndex = (activeCarouselSlide + 1) % carouselSlides.length;
+              showCarouselSlide(nextIndex);
+            });
+          }
+        }
+
+        if (zoomButton && lightbox) {
+          zoomButton.addEventListener('click', function() {
+            const activeSlide = carouselSlides[activeCarouselSlide] || carouselSlides[0];
+            openLightbox(activeSlide, zoomButton);
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

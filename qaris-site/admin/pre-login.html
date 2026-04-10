@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pré-authentification de l'espace administrateur du Cabinet QARIS.">
+  <meta name="robots" content="noindex, nofollow">
+
+  <title>Admin - Vérification d'accès | Cabinet QARIS</title>
+
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="icon" type="image/png" href="../assets/images/logo-quaris.png">
+</head>
+<body class="admin-body">
+  <main role="main">
+    <div class="admin-card">
+      <div class="admin-logo">
+        <img src="../assets/images/logo-quaris.png" alt="Logo Cabinet QARIS">
+        <h1>Vérification d'accès</h1>
+        <p style="color: var(--text-medium); margin-top: 0.5rem;">Entrer le code de sécurité admin</p>
+      </div>
+
+      <form id="pre-login-form" class="admin-form" novalidate>
+        <div class="form-group">
+          <label for="access-code" class="form-label">Code d'accès</label>
+          <input
+            type="password"
+            id="access-code"
+            name="accessCode"
+            class="form-input"
+            placeholder="Code d'accès"
+            required
+            aria-required="true"
+            autocomplete="one-time-code"
+          >
+        </div>
+
+        <div id="pre-login-error" class="hidden" role="alert" style="color: #dc3545; margin-bottom: 1rem; text-align: center;">
+          Code invalide.
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">
+          Continuer vers la connexion admin
+        </button>
+      </form>
+
+      <div style="text-align: center; margin-top: 1.5rem;">
+        <a href="../index.html" style="color: var(--color-primary); font-size: 0.9rem;">← Retour au site</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="../js/config.js" type="module"></script>
+  <script src="../js/pre-login.js" type="module"></script>
+</body>
+</html>

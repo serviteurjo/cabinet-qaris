@@ -1,0 +1,42 @@
+# Environment & Credentials
+.env
+.env.local
+.env.*.local
+config.local.js
+
+# IDE & Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# Dependencies
+node_modules/
+package-lock.json
+npm-debug.log
+
+# Build & Distribution
+dist/
+build/
+out/
+*.tar.gz
+*.zip
+
+# OS Files
+.git/config.local
+.git/info/exclude
+.gitconfig.local
+
+# Temporary Files
+*.tmp
+*.log
+*.cache
+
+# Local Development
+temp/
+debug/

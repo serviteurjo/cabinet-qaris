@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Espace administrateur du Cabinet QARIS - Connexion sécurisée.">
+  <meta name="robots" content="noindex, nofollow">
+  
+  <title>Admin - Connexion | Cabinet QARIS</title>
+  
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="icon" type="image/png" href="../assets/images/logo-quaris.png">
+</head>
+<body class="admin-body">
+  <main role="main">
+    <div class="admin-card">
+      <div class="admin-logo">
+        <img src="../assets/images/logo-quaris.png" alt="Logo Cabinet QARIS">
+        <h1>Espace Administrateur</h1>
+        <p style="color: var(--text-medium); margin-top: 0.5rem;">Cabinet QARIS</p>
+      </div>
+      
+      <form id="admin-login-form" class="admin-form" novalidate>
+        <div class="form-group">
+          <label for="email" class="form-label">Email</label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            class="form-input" 
+            placeholder="votre@email.com"
+            required 
+            aria-required="true"
+            autocomplete="email"
+          >
+        </div>
+        
+        <div class="form-group">
+          <label for="password" class="form-label">Mot de passe</label>
+          <input 
+            type="password" 
+            id="password" 
+            name="password" 
+            class="form-input" 
+            placeholder="Votre mot de passe"
+            required 
+            aria-required="true"
+            autocomplete="current-password"
+          >
+        </div>
+        
+        <div id="login-error" class="hidden" role="alert" style="color: #dc3545; margin-bottom: 1rem; text-align: center;">
+          Email ou mot de passe incorrect.
+        </div>
+        
+        <button type="submit" class="btn btn-primary" style="width: 100%;">
+          <span id="login-text">Se connecter</span>
+          <span id="login-loading" class="hidden">Connexion...</span>
+        </button>
+      </form>
+      
+      <div style="text-align: center; margin-top: 1.5rem;">
+        <a href="pre-login.html" style="display: inline-block; margin-bottom: 0.5rem; color: var(--text-medium); font-size: 0.9rem;">↺ Revenir à la vérification d'accès</a><br>
+        <a href="../index.html" style="color: var(--color-primary); font-size: 0.9rem;">← Retour au site</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="../js/config.js" type="module"></script>
+  <script src="../js/supabaseClient.js" type="module"></script>
+  <script src="../js/adminAuth.js" type="module"></script>
+</body>
+</html>

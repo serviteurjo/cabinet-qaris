@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cabinet QARIS - Accompagnement des couples, familles et jeunes. Formations, coaching et développement personnel et spirituel.">
+  <meta name="keywords" content="cabinet QARIS, accompagnement couples, coaching familial, formation, développement personnel">
+  <meta name="author" content="Cabinet QARIS">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.qaris.fr/">
+  <meta property="og:title" content="Cabinet QARIS — Accompagnement couples & familles">
+  <meta property="og:description" content="Cabinet QARIS accompagne couples, familles et jeunes vers l'harmonie relationnelle. Formations et accompagnement personnalisés.">
+  <meta property="og:image" content="https://www.qaris.fr/assets/images/logo-quaris.png">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://www.qaris.fr/">
+  <meta property="twitter:title" content="Cabinet QARIS — Accompagnement couples & familles">
+  <meta property="twitter:description" content="Cabinet QARIS accompagne couples, familles et jeunes vers l'harmonie relationnelle. Formations et accompagnement personnalisés.">
+  <meta property="twitter:image" content="https://www.qaris.fr/assets/images/logo-quaris.png">
+  
+  <!-- Canonical (placeholder - remplacer par le domaine final) -->
+  <link rel="canonical" href="https://example.com/">
+
+  <title>Cabinet QARIS — Accompagnement couples & familles</title>
+  
+  <!-- SAFE FIXES: preconnect correctif pour éviter une requête stylesheet invalide -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="assets/images/logo-quaris.png">
+  <!-- Preconnect to CDN -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <!-- Font Awesome 6.5.0 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Cabinet QARIS",
+    "url": "https://www.qaris.fr/",
+    "logo": "https://www.qaris.fr/assets/images/logo-quaris.png",
+    "telephone": "+22951801000",
+    "email": "contact@qaris.fr",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 Avenue de la Paix",
+      "addressLocality": "Paris",
+      "postalCode": "75000",
+      "addressCountry": "FR"
+    },
+    "sameAs": [
+      "https://www.facebook.com/djomionkede.solange.houngbo",
+      "https://www.instagram.com/djomionkede/",
+      "https://wa.me/22951801000"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="navbar" role="banner">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-logo" aria-label="Accueil Cabinet QARIS">
+        <img src="assets/images/logo-quaris.png" alt="Logo Cabinet QARIS" width="150" height="100" loading="eager" decoding="async">
+        <span class="navbar-logo-text"></span>
+      </a>
+      
+      <nav id="navbar-menu" class="navbar-menu" role="navigation" aria-label="Navigation principale">
+        <a href="index.html" class="navbar-link is-active" aria-current="page">Accueil</a>
+        <a href="a-propos.html" class="navbar-link">À propos</a>
+        <a href="formations/index.html" class="navbar-link">Événements</a>
+        <a href="contact.html" class="navbar-link">Contact</a>
+      </nav>
+      
+      <button class="navbar-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navbar-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main role="main">
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-bg">
+        <!-- Perf: image héro prioritaire explicitée pour accélérer le rendu above-the-fold -->
+        <img src="assets/images/hero-bg.jpg" alt="" class="hero-bg-image" role="presentation" loading="eager" fetchpriority="high" decoding="async">
+      </div>
+      <div class="hero__container">
+        <div class="hero__content">
+          <div class="hero__badge">Cabinet QARIS • Accompagnement &amp; Formation</div>
+          <h1 id="hero-title" class="hero-title">Bienvenue au Cabinet QARIS</h1>
+          <div class="hero__rule" aria-hidden="true"></div>
+          <p class="hero-subtitle">Cabinet d'accompagnement, de relations d'aide, de formation, et de conseil stratégique humain</p>
+          <div class="hero-cta">
+            <a href="formations/index.html" class="btn btn-primary btn-lg">Découvrir nos événements</a>
+            <a href="contact.html" class="btn btn-secondary btn-lg">Nous contacter</a>
+          </div>
+        </div>
+        <div class="hero__media">
+          <!-- Perf: la slide active reste prioritaire -->
+          <img src="assets/images/service-couples.jpg" alt="Portrait de la Directrice du Cabinet QARIS" class="hero__slide is-active" loading="eager" fetchpriority="high" decoding="async">
+          <!-- Perf: la slide suivante reste eager pour la fluidité mais en priorité basse -->
+          <img src="assets/images/hero-bj0.jpg" alt="Portrait de la Directrice du Cabinet QARIS" class="hero__slide is-next" loading="eager" fetchpriority="low" decoding="async">
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section bg-cream" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="services-title" class="section-title">Notre Accompagnement</h2>
+          <p class="section-subtitle">Des accompagnements personnalisés pour vous aider à avancer sereinement dans votre vie personnelle et relationnelle</p>
+        </div>
+        
+        <div class="grid grid-3">
+          
+         <article class="card">
+            <img src="assets/images/service-famille.jpg" alt="Accompagnement familial" class="card-image" loading="lazy" decoding="async">
+            <div class="card-body">
+              <h3 class="card-title">Accompagnement prénuptial et post-nuptial</h3>
+              <div class="card-text">
+              <p>Préparation émotionnelle, spirituelle et pratique au mariage</p>
+              <p>Suivi après le mariage pour consolider le couple</p>
+              </div>
+              <a href="contact.html" class="btn btn-primary btn-sm">En savoir plus</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="assets/images/service-adolescents.jpg" alt="Accompagnement des adolescents et jeunes filles" class="card-image" loading="lazy" decoding="async">
+            <div class="card-body">
+              <h3 class="card-title">Accompagnement des adolescents et jeunes filles</h3>
+              <div class="card-text">
+                <p>Construction identitaire</p>
+                <p>Gestion émotionnelle</p>
+                <p>Orientation et confiance en soi</p>
+              </div>
+              <a href="contact.html" class="btn btn-primary btn-sm">En savoir plus</a>
+            </div>
+          </article>
+          
+          <article class="card">
+            <img src="assets/images/service-parents.jpg" alt="Accompagnement des familles et parents" class="card-image" loading="lazy" decoding="async">
+            <div class="card-body">
+              <h3 class="card-title">Accompagnement des familles et parents</h3>
+              <div class="card-text">
+                <p>Éducation des enfants</p>
+                <p>Communication parents-enfants</p>
+                <p>Gestion des conflits familiaux</p>
+              </div>
+              <a href="contact.html" class="btn btn-primary btn-sm">En savoir plus</a>
+            </div>
+          </article>
+
+
+        </div>
+        
+        <div class="grid grid-3 mt-4">
+
+           <article class="card">
+            <img src="assets/images/service-couples.jpg" alt="Accompagnement des couples" class="card-image" loading="lazy" decoding="async">
+            <div class="card-body">
+              <h3 class="card-title">Accompagnement des Couples</h3>
+              <div class="card-text"> 
+                <p>Couples  en difficulté</p>
+                <p>Couples en transition</p>
+                <p>Couples désirant renforcer leur union</p>
+              </div>
+              <a href="contact.html" class="btn btn-primary btn-sm">En savoir plus</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="assets/images/service-celibataires.jpg" alt="Accompagnement des célibataires" class="card-image" loading="lazy" decoding="async">
+            <div class="card-body">
+              <h3 class="card-title"> Accompagnement des célibataires</h3>
+              <div class="card-text">
+                <p>Découverte de soi</p>
+                <p>Investissement personnel</p>
+                <p>Guérison des blessures affectives</p>
+                <p>Construction d'une vision saine de vie et de couple</p>
+              </div>
+              <a href="contact.html" class="btn btn-primary btn-sm">En savoir plus</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="assets/images/service-leaders.jpg" alt="Accompagnement des leaders et personnes influentes" class="card-image card-image-top" loading="lazy" decoding="async">
+            <div class="card-body">
+              <h3 class="card-title">Accompagnement des leaders et hommes de Dieu</h3>
+              <div class="card-text">
+                <p>Espace d'écoute confidentiel</p>
+                <p>Soutien émotionnel et spirituel</p>
+                <p>Gestion des pressions et responsabilités</p>
+              </div>
+              <a href="contact.html" class="btn btn-primary btn-sm">En savoir plus</a>
+            </div>
+          </article>
+          
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Wedding Logistics Services Section -->
+    <section class="section bg-white" aria-labelledby="wedding-services-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="wedding-services-title" class="section-title">Nos Services</h2>
+          <p class="section-subtitle">Un accompagnement logistique structuré pour préparer votre mariage avec sérénité, clarté et excellence.</p>
+        </div>
+
+        <div class="grid grid-2" style="gap: 2rem;">
+          <article class="card">
+            <img src="assets/images/Listededot.jpg" alt="Achat de la liste de dot avec accompagnement personnalisé" class="card-image" loading="lazy" decoding="async">
+            <div class="card-body">
+              <h3 class="card-title">Achat de la liste de dot</h3>
+              <div class="card-text">
+                <p>Nous vous accompagnons dans la préparation et l'achat de la liste de dot avec méthode, discrétion et respect des traditions familiales.</p>
+                <p>Grâce à notre approche personnalisée, vous bénéficiez d'une organisation claire, de conseils pratiques et d'un suivi rigoureux pour éviter le stress de dernière minute.</p>
+              </div>
+              <a href="contact.html" class="btn btn-primary btn-sm">En savoir plus</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-carousel card-carousel--valise" data-card-carousel>
+              <img src="assets/images/Valisemariée.jpg" alt="Gestion complète de la valise de la mariée" class="card-image card-carousel-slide is-active" data-carousel-slide loading="lazy" decoding="async">
+              <img src="assets/images/valise-slide-2.jpg" alt="Valise de mariée rose marbrée à roulettes" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async">
+              <img src="assets/images/valise-slide-3.jpg" alt="Ensemble de valises rose pour la mariée" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async">
+              <img src="assets/images/valise-slide-4.jpg" alt="Valises de mariée blanches décorées avec accessoires" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async">
+              <button class="card-carousel-btn card-carousel-btn--prev" type="button" aria-label="Image précédente" data-carousel-prev>
+                <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+              </button>
+              <button class="card-carousel-btn card-carousel-btn--next" type="button" aria-label="Image suivante" data-carousel-next>
+                <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+              </button>
+              <button class="card-carousel-btn card-carousel-btn--zoom" type="button" aria-label="Agrandir l'image" data-carousel-zoom>
+                <i class="fa-solid fa-up-right-and-down-left-from-center" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Gestion de la valise de la mariée</h3>
+              <div class="card-text">
+                <p>Nous assurons la constitution, la vérification et l'ordonnancement de la valise de la mariée selon les besoins du programme et des cérémonies.</p>
+                <p>Chaque élément est planifié avec précision pour garantir une préparation fluide, élégante et conforme aux exigences de votre célébration.</p>
+              </div>
+              <a href="contact.html" class="btn btn-primary btn-sm">En savoir plus</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="grid grid-2 mt-4" style="gap: 2rem;">
+          <article class="card">
+            <div class="card-carousel card-carousel--habillement" data-card-carousel>
+              <img src="assets/images/habillement.jpg" alt="Habillement complet de mariage tenues chaussures et accessoires" class="card-image card-carousel-slide is-active" data-carousel-slide loading="lazy" decoding="async">
+              <img src="assets/images/habillement-slide-2.jpg" alt="Habillement complet de mariage pour couple en tenue colorée" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/images/habillement.jpg';">
+              <img src="assets/images/habillement-slide-3.jpg" alt="Habillement complet de mariage traditionnel pour couple" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/images/habillement.jpg';">
+              <img src="assets/images/habillement-slide-4.jpg" alt="Habillement complet de mariage en tenue wax bleu et violet" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async">
+              <img src="assets/images/habillement-slide-5.jpg" alt="Habillement complet de mariage en tenue vert émeraude et noire" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async">
+              <button class="card-carousel-btn card-carousel-btn--prev" type="button" aria-label="Image précédente" data-carousel-prev>
+                <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+              </button>
+              <button class="card-carousel-btn card-carousel-btn--next" type="button" aria-label="Image suivante" data-carousel-next>
+                <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+              </button>
+              <button class="card-carousel-btn card-carousel-btn--zoom" type="button" aria-label="Agrandir l'image" data-carousel-zoom>
+                <i class="fa-solid fa-up-right-and-down-left-from-center" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Habillement Complet</h3>
+              <div class="card-text">
+                <p>Tenues, chaussures et accessoires sont sélectionnés et harmonisés avec votre vision, votre identité et le style de l'événement.</p>
+                <p>Nous coordonnons chaque détail vestimentaire pour un rendu cohérent, raffiné et adapté au déroulement complet du mariage.</p>
+              </div>
+              <a href="contact.html" class="btn btn-primary btn-sm">En savoir plus</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-carousel card-carousel--habillement" data-card-carousel>
+              <img src="assets/images/Organisation7.jpg" alt="Habillement complet de mariage tenues chaussures et accessoires" class="card-image card-carousel-slide is-active" data-carousel-slide loading="lazy" decoding="async">
+              <img src="assets/images/Organisation8.jpg" alt="Habillement complet de mariage pour couple en tenue colorée" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/images/habillement.jpg';">
+              <img src="assets/images/Organisation9.jpg" alt="Habillement complet de mariage en tenue wax bleu et violet" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async">
+              <img src="assets/images/Organisation4.jpg" alt="Habillement complet de mariage pour couple en tenue colorée" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/images/habillement.jpg';">
+              <img src="assets/images/Organisation1.jpg" alt="Habillement complet de mariage en tenue wax bleu et violet" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async">
+              <img src="assets/images/Organisation2.jpg" alt="Habillement complet de mariage en tenue vert émeraude et noire" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async">
+              <img src="assets/images/Organisation6.jpg" alt="Habillement complet de mariage en tenue vert émeraude et noire" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async">
+              <img src="assets/images/Organisation5.jpg" alt="Habillement complet de mariage traditionnel pour couple" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/images/habillement.jpg';">
+              <img src="assets/images/Organisation3.jpg" alt="Habillement complet de mariage en tenue vert émeraude et noire" class="card-image card-carousel-slide" data-carousel-slide loading="lazy" decoding="async">
+              <button class="card-carousel-btn card-carousel-btn--prev" type="button" aria-label="Image précédente" data-carousel-prev>
+                <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+              </button>
+              <button class="card-carousel-btn card-carousel-btn--next" type="button" aria-label="Image suivante" data-carousel-next>
+                <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+              </button>
+              <button class="card-carousel-btn card-carousel-btn--zoom" type="button" aria-label="Agrandir l'image" data-carousel-zoom>
+                <i class="fa-solid fa-up-right-and-down-left-from-center" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Organisation pratique</h3>
+              <div class="card-text">
+                <p>Nous prenons en charge l’organisation complète de votre mariage : planification, service traiteur, location de chaises et de vaisselle, réalisation du gâteau, couverture médiatique, animation DJ et coordination de tous les détails pour un événement parfaitement orchestré.</p>
+                </div>
+              <a href="contact.html" class="btn btn-primary btn-sm">En savoir plus</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section bg-white" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="features-title" class="section-title">Pourquoi choisir le Cabinet QARIS ?</h2>
+          <p class="section-subtitle">Expertise bienveillante au service de votre épanouissement. Découvrez nos engagements fondamentaux.</p>
+        </div>
+        
+        <div class="grid grid-4" style="gap: 2rem;">
+          <article class="card card-soft" style="text-align: center;">
+            <div class="card-body">
+              <div class="icon-badge" data-color="1" style="margin: 0 auto 1rem;" aria-hidden="true">🔐</div>
+              <h4>Confidentialité Absolue</h4>
+              <p class="card-text">Vos échanges sont protégés dans un cadre strictement confidentiel et sécurisé.</p>
+            </div>
+          </article>
+          
+          <article class="card card-soft" style="text-align: center;">
+            <div class="card-body">
+              <div class="icon-badge" data-color="2" style="margin: 0 auto 1rem;" aria-hidden="true">🤝</div>
+              <h4>Respect de la Personne</h4>
+              <p class="card-text">Chaque individu est accueilli avec empathie, sans jugement, dans son intégrité.</p>
+            </div>
+          </article>
+          
+          <article class="card card-soft" style="text-align: center;">
+            <div class="card-body">
+              <div class="icon-badge" data-color="3" style="margin: 0 auto 1rem;" aria-hidden="true">⚖️</div>
+              <h4>Éthique Professionnelle</h4>
+              <p class="card-text">Nous adhérons aux plus hauts standards éthiques et codes professionnels.</p>
+            </div>
+          </article>
+          
+          <article class="card card-soft" style="text-align: center;">
+            <div class="card-body">
+              <div class="icon-badge" data-color="4" style="margin: 0 auto 1rem;" aria-hidden="true">✨</div>
+              <h4>Intégrité & Transparence</h4>
+              <p class="card-text">Honnêteté et clarté dans chaque interaction, relation et engagement.</p>
+            </div>
+          </article>
+
+          <article class="card card-soft" style="text-align: center;">
+            <div class="card-body">
+              <div class="icon-badge" data-color="1" style="margin: 0 auto 1rem;" aria-hidden="true">👨‍👩‍👧‍👦</div>
+              <h4>Protection Familles & Mineurs</h4>
+              <p class="card-text">Protection spécifique et vigilance envers les couples, familles et populations vulnérables.</p>
+            </div>
+          </article>
+
+          <article class="card card-soft" style="text-align: center;">
+            <div class="card-body">
+              <div class="icon-badge" data-color="2" style="margin: 0 auto 1rem;" aria-hidden="true">🕯️</div>
+              <h4>Dimension Spirituelle</h4>
+              <p class="card-text">Accompagnement respectueux de vos valeurs spirituelles et de votre foi.</p>
+            </div>
+          </article>
+
+          <article class="card card-soft" style="text-align: center;">
+            <div class="card-body">
+              <div class="icon-badge" data-color="3" style="margin: 0 auto 1rem;" aria-hidden="true">⭐</div>
+              <h4>Engagement de Qualité</h4>
+              <p class="card-text">Excellence dans chaque accompagnement, formation et service proposé.</p>
+            </div>
+          </article>
+
+          <article class="card card-soft" style="text-align: center;">
+            <div class="card-body">
+              <div class="icon-badge" data-color="4" style="margin: 0 auto 1rem;" aria-hidden="true">🛡️</div>
+              <h4>Cadre Sécurisé & Bienveillant</h4>
+              <p class="card-text">Un environnement safe, éthique et professionnel pour votre parcours de croissance.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section bg-rose-light" aria-labelledby="testimonials-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="testimonials-title" class="section-title">Témoignages</h2>
+          <p class="section-subtitle">Ce que nos clients disent de leur expérience avec le Cabinet QARIS</p>
+        </div>
+        
+        <div class="grid grid-3 testimonials-grid">
+          <article class="card card-soft">
+            <div class="card-body">
+              <h3 class="card-title">JE VOULAIS DEVENIR UN BON MARI ET UN BON PÈRE</h3>
+              <p class="card-text">Je suis fiancé, j’ai 28 ans. Lorsque j’ai intégré l’École de mariage du Cabinet QARIS, ma motivation était claire : je voulais me préparer sérieusement à devenir un bon mari et un bon père.</p>
+              <details class="testimonial-details">
+                <summary>Lire le témoignage complet</summary>
+                <div class="testimonial-details-content">
+                  <p>En grandissant, je n’ai pas eu de véritable modèle masculin pour m’orienter. Je ne savais pas concrètement comment aimer une femme, comment bâtir un foyer stable, ni comment être un père présent et engagé. J’avais besoin de comprendre mon rôle, mes responsabilités et la posture juste à adopter dans le mariage et dans la paternité.</p>
+                  <p>Au cours de la formation, j’ai énormément appris. Les modules sur la relation homme-femme et la gestion des conflits m’ont particulièrement marqué. Ils m’ont aidé à mieux comprendre les dynamiques du couple et à acquérir des outils pratiques pour gérer les tensions sans détruire la relation.</p>
+                  <p>Aujourd’hui, je vois déjà l’impact dans ma vie. Je suis devenu un fiancé plus attentif, plus doux et plus patient. J’apprends à prendre soin de ma future épouse, à rechercher son bien et à construire une relation fondée sur la compréhension et le respect. Ma vision du couple a profondément évolué, et cela se ressent dans mon comportement quotidien.</p>
+                  <p>Les modules étaient structurés, clairs et enrichissants. La formatrice a su créer un cadre d’apprentissage rassurant, avec des exemples concrets et des témoignages qui facilitaient la compréhension.</p>
+                  <p>Je recommande cette formation sans hésitation. J’en parle autour de moi, car je suis convaincu qu’elle devrait être accessible dans tout le Bénin et même au-delà. Elle répond à un besoin réel et prépare véritablement au mariage.</p>
+                </div>
+              </details>
+              <footer class="card-footer" style="border: none; padding: 1rem 0 0 0;">
+                <strong>C.H., 28 ans</strong>
+                <span style="color: var(--text-light);">Fiancé</span>
+              </footer>
+            </div>
+          </article>
+          
+          <article class="card card-soft">
+            <div class="card-body">
+              <h3 class="card-title">SUIVRE LA FORMATION ENSEMBLE NOUS A MIS SUR LA MÊME LONGUEUR D’ONDE</h3>
+              <p class="card-text">Je m’appelle E.M., je suis fiancée. Avant de prendre part à l’École de mariage du Cabinet QARIS, je voulais que cette formation soit une occasion pour mon fiancé et moi de nous solidifier, de mieux comprendre notre projet de mariage et de poser des bases solides pour notre couple.</p>
+              <details class="testimonial-details">
+                <summary>Lire le témoignage complet</summary>
+                <div class="testimonial-details-content">
+                  <p>Nous avions déjà commencé à travailler sur la communication, mais ce n’était pas encore comme il faut. J’avais reçu une formation auparavant, ce qui m’avait préparée à certaines choses, mais mon fiancé avait encore des difficultés à comprendre certains aspects que moi je comprenais déjà.</p>
+                  <p>Pendant la formation, j’ai découvert l’essentiel : la mission des époux. Le module sur le rôle de l’homme et de la femme m’a particulièrement marquée. Il a montré que si l’homme ne connaît pas son rôle et la femme non plus, tout devient compliqué. L’image du roc et de la base qu’est la communication m’a beaucoup aidée. C’est la fondation et ce que l’on construit dessus, c’est notre maison à nous deux.</p>
+                  <p>Aujourd’hui, cette formation a transformé notre manière de communiquer. Nous suivons les modules ensemble, ce qui nous a permis de mieux comprendre ce que l’autre disait. Ce n’est plus que l’un reste dans son coin ; quand un sujet vient, nous en parlons. Nous sommes sur la même longueur d’onde et cela facilite nos échanges.</p>
+                  <p>Les cours étaient profonds et très pratiques. La formatrice a su aborder chaque aspect avec des exemples concrets et des partages qui ont enrichi chaque séance. J’ai beaucoup aimé cette formation et elle m’a vraiment apporté beaucoup.</p>
+                  <p>Je recommanderais cette formation à d’autres personnes parce qu’elle aide énormément. Pour les fiancés, elle permet de poser des bases solides. Pour les couples déjà mariés, elle peut renforcer et restaurer leur relation. Et pour ceux qui accompagnent des jeunes ou des couples, elle donne des outils concrets pour mieux les guider.</p>
+                </div>
+              </details>
+              <footer class="card-footer" style="border: none; padding: 1rem 0 0 0;">
+                <strong>E.M.</strong>
+                <span style="color: var(--text-light);">Fiancée</span>
+              </footer>
+            </div>
+          </article>
+
+          <article class="card card-soft">
+            <div class="card-body">
+              <h3 class="card-title">À UN MOMENT, J’AVAIS MÊME PEUR DE ME MARIER</h3>
+              <p class="card-text">Je m’appelle S.S., je suis fiancé. Avant de prendre part à l’École de mariage du Cabinet QARIS, ma principale difficulté était la communication. Je voulais en apprendre davantage sur le mariage, sur la manière de vivre ensemble et d’avoir un couple épanoui et heureux.</p>
+              <details class="testimonial-details">
+                <summary>Lire le témoignage complet</summary>
+                <div class="testimonial-details-content">
+                  <p>À un moment, j’avais même peur de me marier à cause des échecs que j’ai vus autour de moi et de mon ignorance dans la gestion des conflits.</p>
+                  <p>Pendant la formation, j’ai appris énormément de choses essentielles, notamment le principe de quitter son père et sa mère pour s’attacher à sa femme. Nous avons aussi approfondi le rôle de l’époux et de l’épouse. Ce qui m’a marqué, c’est de comprendre que plus ma fiancée et moi nous nous rapprochons l’un de l’autre, plus la distance qui nous sépare se réduit. J’ai pris conscience qu’en tant qu’homme et futur chef de famille, j’ai un rôle important : aimer ma femme volontairement, sans attendre en retour et du plus profond du cœur.</p>
+                  <p>Cette formation a eu des effets concrets. Moi qui n’avais aucune notion de communication, j’ai appris à ne plus faire le fort, à ne plus cacher mes émotions ni pleurer seul. Cela m’a permis de comprendre comment vivre réellement avec quelqu’un, d’être de cœur à cœur et de parler à l’autre sans le blesser. J’ai compris l’importance de traiter mes propres blessures émotionnelles avant d’entrer dans le mariage.</p>
+                  <p>Les cours étaient profonds et très pratiques. La formatrice a su créer des moments d’échange et d’ouverture d’esprit où l’on pouvait parler de tout en profondeur. J’ai beaucoup apprécié cette formation et elle m’a apporté de nombreux outils pour construire une relation solide et épanouie.</p>
+                  <p>Je recommande cette formation à 100 % ! Elle a changé ma vision, ma perception et ma manière d’aborder le mariage. C’est une étape indispensable pour toute personne qui veut s’engager dans ce processus.</p>
+                </div>
+              </details>
+              <footer class="card-footer" style="border: none; padding: 1rem 0 0 0;">
+                <strong>S.S.</strong>
+                <span style="color: var(--text-light);">Fiancé</span>
+              </footer>
+            </div>
+          </article>
+
+          <article class="card card-soft">
+            <div class="card-body">
+              <h3 class="card-title">JE NE SAVAIS PAS QUE LES CONFLITS SONT NORMAUX ET QU’IL FAUT SAVOIR LES RÉSOUDRE</h3>
+              <p class="card-text">Je m’appelle L.B., je suis fiancée. Avant de prendre part à l’École de mariage du Cabinet QARIS, je voulais comprendre ce que signifie réellement le mariage et connaître ses bases. Je souhaitais aussi trouver des solutions aux difficultés rencontrées dans mes fiançailles.</p>
+              <details class="testimonial-details">
+                <summary>Lire le témoignage complet</summary>
+                <div class="testimonial-details-content">
+                  <p>La communication me posait problème et je manquais de compréhension, ce qui créait souvent des tensions dans la relation.</p>
+                  <p>Pendant la formation, j’ai appris à pardonner, à communiquer sainement et à m’exprimer avec maturité. J’ai compris l’importance de reconnaître ma part de responsabilité, de gérer ma colère et de chercher des solutions plutôt que de blâmer l’autre. J’ai également appris à guérir de mes blessures passées, à construire un projet de vie et à grandir ensemble.</p>
+                  <p>Les thèmes qui m’ont le plus marquée sont la parentalité, le pardon, la gestion des conflits et la mission des conjoints.</p>
+                  <p>Cette formation a complètement changé ma vision du mariage. J’ai compris que le mariage est un engagement où l’amour doit être entretenu et où les responsabilités sont partagées. Il n’y a ni gagnant ni perdant, mais une seule équipe. Les effets sont déjà visibles dans ma relation avant et après la formation.</p>
+                  <p>J’ai beaucoup apprécié cette formation. En seulement une semaine, j’ai vu des changements concrets dans mes fiançailles. Les expériences partagées par la formatrice étaient sincères et riches d’enseignements, permettant d’éviter des erreurs et de mieux réagir dans des situations difficiles. L’ambiance était saine et chaque participant pouvait s’exprimer librement.</p>
+                  <p>Je recommande cette formation à toutes les personnes qui souhaitent préparer efficacement leur mariage. Elle transforme les mentalités, aide à éviter des erreurs coûteuses émotionnellement et construit des foyers solides avec une vision claire et équilibrée du couple.</p>
+                </div>
+              </details>
+              <footer class="card-footer" style="border: none; padding: 1rem 0 0 0;">
+                <strong>L.B.</strong>
+                <span style="color: var(--text-light);">Fiancée</span>
+              </footer>
+            </div>
+          </article>
+
+          <article class="card card-soft">
+            <div class="card-body">
+              <h3 class="card-title">J’AI DÉCOUVERT LES DIFFÉRENCES ENTRE HOMMES ET FEMMES</h3>
+              <p class="card-text">Je m’appelle D.S., je suis marié. Avant ma participation à l’École de mariage du Cabinet QARIS, je voulais acquérir des connaissances sur la gestion de la vie de couple, notamment pour mieux comprendre la communication et les traits caractéristiques de la femme.</p>
+              <details class="testimonial-details">
+                <summary>Lire le témoignage complet</summary>
+                <div class="testimonial-details-content">
+                  <p>Pendant la formation, j’ai découvert les différences entre hommes et femmes et le module sur la communication m’a particulièrement marqué.</p>
+                  <p>Cette formation a déjà eu des effets concrets dans ma relation. Elle m’a aidé à mieux comprendre ma partenaire et à améliorer notre manière de communiquer.</p>
+                  <p>Les cours étaient de très bonne qualité, l’accompagnement exceptionnel et la formatrice toujours à l’écoute.</p>
+                  <p>Je recommande cette formation à toutes les personnes qui souhaitent mieux comprendre la dynamique du couple. Les modules sont pertinents et la pédagogie adaptée pour tirer le meilleur de chaque enseignement.</p>
+                </div>
+              </details>
+              <footer class="card-footer" style="border: none; padding: 1rem 0 0 0;">
+                <strong>D.S.</strong>
+                <span style="color: var(--text-light);">Marié</span>
+              </footer>
+            </div>
+          </article>
+
+          <article class="card card-soft">
+            <div class="card-body">
+              <h3 class="card-title">J’AI COMPRIS QUE LA GUÉRISON PERSONNELLE EST LA CLÉ D’UN MARIAGE RÉUSSI</h3>
+              <p class="card-text">Je m’appelle C.M., je suis fiancée. Avant de suivre ma participation à l’École de mariage du Cabinet QARIS, j’avais des attentes parfois irréalistes vis-à-vis de mon fiancé. Ces attentes créaient de petits conflits entre nous.</p>
+              <details class="testimonial-details">
+                <summary>Lire le témoignage complet</summary>
+                <div class="testimonial-details-content">
+                  <p>Je voulais souvent qu’il fonctionne comme moi et qu’il voie les choses selon ma perspective.</p>
+                  <p>J’avais du mal à accepter certaines différences pourtant naturelles entre l’homme et la femme et, avec du recul, je réalise que j’avais une image partiellement déformée du mariage, influencée par mes propres projections.</p>
+                  <p>Pendant la formation, j’ai découvert que je suis responsable de ma guérison intérieure et que je ne suis pas appelée à rester victime, mais à choisir de guérir.</p>
+                  <p>Le module “Mieux se connaître pour mieux faire un choix” m’a particulièrement marquée, car il m’a fait comprendre qu’avant de s’intéresser au mariage, il faut s’intéresser à soi-même. J’ai aussi appris que, plutôt que de vouloir changer l’autre, il faut d’abord travailler sur sa propre transformation. Les thèmes qui m’ont le plus impactée sont la communication, la gestion des parents et de la belle-famille, les mythes autour de la sexualité, la place du pardon, la mission des époux et la gestion des conflits. Chaque module apportait des outils concrets et immédiatement applicables.</p>
+                  <p>Cette formation a profondément changé ma vision du couple et du mariage. Elle m’a permis de mieux comprendre ma mentalité et de l’aligner pour construire une relation solide. Notre communication avec mon fiancé s’est nettement améliorée, nos échanges sont plus sains et notre amour a gagné en maturité. Le module sur la gestion des conflits nous aide à aborder les incompréhensions avec plus de sagesse et moins d’ego.</p>
+                  <p>Les cours sont d’une grande qualité et très pratiques, et la formatrice a su créer un climat de confiance, bienveillant et authentique, permettant à chacun de s’exprimer librement. Ces moments ont parfois ressemblé à de véritables séances de thérapie et de restauration intérieure.</p>
+                  <p>Je recommande vivement cette formation à toutes les personnes aspirant au mariage, aux fiancés et même aux jeunes mariés. Elle permet de mieux se découvrir, de recevoir des clés pratiques et des ressources solides pour construire une vie de couple épanouie et durable.</p>
+                </div>
+              </details>
+              <footer class="card-footer" style="border: none; padding: 1rem 0 0 0;">
+                <strong>C.M.</strong>
+                <span style="color: var(--text-light);">Fiancée</span>
+              </footer>
+            </div>
+          </article>
+
+          <article class="card card-soft">
+            <div class="card-body">
+              <h3 class="card-title">LE MODULE SUR LA GESTION DES CONFLITS M’A CHANGÉE</h3>
+              <p class="card-text">Je m’appelle A.F., je suis en couple. Avant l’École de mariage du Cabinet QARIS, je voulais comprendre l’objectif du mariage et ses implications, et en savoir davantage sur le rôle de la femme au foyer.</p>
+              <details class="testimonial-details">
+                <summary>Lire le témoignage complet</summary>
+                <div class="testimonial-details-content">
+                  <p>Pendant la formation, j’ai appris l’importance de la gestion du foyer, des routines personnelles et des différences entre hommes et femmes. Le module sur la gestion des conflits m’a particulièrement changée.</p>
+                  <p>Cette formation a eu un impact concret dans ma vie. Aujourd’hui, j’aborde les conflits différemment avec mon conjoint, avec plus de compréhension et de sérénité.</p>
+                  <p>Tout ce que nous avons abordé est bénéfique. Certaines paroles et phrases résonnent encore dans mon cœur face aux défis de la vie personnelle et relationnelle. La formation est d’excellente qualité et je la recommande déjà à mes connaissances.</p>
+                  <p>Je recommande cette formation à toutes les personnes qui souhaitent renforcer leur couple. La formatrice possède toutes les compétences nécessaires pour redonner de l’espoir et offrir des outils pratiques aux couples en difficulté.</p>
+                </div>
+              </details>
+              <footer class="card-footer" style="border: none; padding: 1rem 0 0 0;">
+                <strong>A.F.</strong>
+                <span style="color: var(--text-light);">En couple</span>
+              </footer>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section bg-primary" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="section-header" style="margin-bottom: 0;">
+          <h2 id="cta-title" class="section-title text-white" style="text-shadow: 0 2px 10px rgba(0,0,0,0.2);">Prêt à commencer votre parcours ?</h2>
+          <p class="section-subtitle" style="color: rgba(255,255,255,0.95); text-shadow: 0 1px 5px rgba(0,0,0,0.15);">Prenez le premier pas vers une vie plus épanouissante. Contactez-nous dès aujourd'hui.</p>
+          <div class="hero-cta" style="margin-top: 2rem;">
+            <a href="contact.html" class="btn btn-secondary btn-lg">Prendre rendez-vous</a>
+            <a href="a-propos.html" class="btn btn-ghost-on-primary btn-lg">En savoir plus</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="image-lightbox" data-lightbox hidden aria-hidden="true">
+    <button class="image-lightbox__backdrop" type="button" aria-label="Fermer la visualisation" data-lightbox-close></button>
+    <div class="image-lightbox__dialog" role="dialog" aria-modal="true" aria-label="Visualisation de l'image habillement complet">
+      <button class="image-lightbox__close" type="button" aria-label="Fermer l'image agrandie" data-lightbox-close>
+        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+      </button>
+      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="" class="image-lightbox__image" data-lightbox-image loading="eager" decoding="async">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-grid">
+       <div class="footer-brand">
+          <!-- Fiabilité: chemin corrigé pour éviter une requête 404 en page racine -->
+          <img src="assets/images/logo-quaris.png" alt="Logo Cabinet QARIS" loading="lazy" decoding="async">
+          <p>Le Cabinet QARIS vous accompagne avec bienveillance et professionnalisme dans vos parcours de vie, relationnels et de développement personnel.</p>
+          <div class="footer-social">
+            <h4 class="footer-title">Réseaux sociaux</h4>
+            <div class="footer-social__icons">
+              <a href="https://www.facebook.com/share/1FBMDrUS41/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer-social__icon"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/djomionkede/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer-social__icon"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://wa.me/message/RLCUEKQFPC22B1" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="footer-social__icon"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-links-wrapper">
+          <h4 class="footer-title">Liens rapides</h4>
+          <nav class="footer-links" aria-label="Liens rapides">
+            <a href="index.html">Accueil</a>
+            <a href="a-propos.html">À propos</a>
+            <a href="formations/index.html">Événements</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+        
+        <div class="footer-links-wrapper">
+          <h4 class="footer-title">Notre accompagnement</h4>
+          <nav class="footer-links" aria-label="Nos services">
+            <a href="contact.html">Accompagnement couples</a>
+            <a href="contact.html">Accompagnement familial</a>
+            <a href="contact.html">Coaching jeunes</a>
+            <a href="formations/index.html">Formations</a>
+          </nav>
+        </div>
+        
+        <div class="footer-contact">
+          <h4 class="footer-title">Contact</h4>
+          <p><span aria-hidden="true">📍</span> Calavi-Tankpè, Nouveau tronçon Tankpè-Aïtchédji, 3e Rue à gauche</p>
+          <p><span aria-hidden="true">📞</span> +229 01 51 80 10 00</p>
+          <p><span aria-hidden="true">✉️</span> cabinetqaris@gmail.com</p>
+          <p><span aria-hidden="true">🕐</span> Lun-Ven: 9h-16h</p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 Cabinet QARIS. Tous droits réservés.</p>
+        <nav class="footer-bottom-links" aria-label="Mentions légales">
+          <a href="#">Mentions légales</a>
+          <a href="#">Politique de confidentialité</a>
+          <a href="#">CGV</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/config.js" type="module"></script>
+  <script src="js/supabaseClient.js" type="module"></script>
+  <script>
+    // Mobile menu toggle
+    document.addEventListener('DOMContentLoaded', function() {
+      const navbarToggle = document.querySelector('.navbar-toggle');
+      const navbarMenu = document.querySelector('.navbar-menu');
+      
+      if (navbarToggle && navbarMenu) {
+        navbarToggle.addEventListener('click', function() {
+          navbarMenu.classList.toggle('is-open');
+          navbarToggle.classList.toggle('is-active');
+          const isOpen = navbarMenu.classList.contains('is-open');
+          navbarToggle.setAttribute('aria-expanded', isOpen);
+          navbarToggle.setAttribute('aria-label', isOpen ? 'Fermer le menu' : 'Ouvrir le menu');
+        });
+        
+        // Fermer le menu quand on clique sur un lien
+        const navLinks = navbarMenu.querySelectorAll('.navbar-link');
+        navLinks.forEach(function(link) {
+          link.addEventListener('click', function() {
+            navbarMenu.classList.remove('is-open');
+            navbarToggle.classList.remove('is-active');
+            navbarToggle.setAttribute('aria-expanded', 'false');
+            navbarToggle.setAttribute('aria-label', 'Ouvrir le menu');
+          });
+        });
+      }
+
+      const heroMedia = document.querySelector('.hero__media');
+      const heroSlides = heroMedia ? Array.from(heroMedia.querySelectorAll('.hero__slide')) : [];
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!reduceMotion && heroSlides.length > 1 && heroMedia) {
+        const flipDuration = 2200;
+        let isFlipping = false;
+        let currentIndex = heroSlides.findIndex(function(slide) {
+          return slide.classList.contains('is-active');
+        });
+        if (currentIndex < 0) {
+          currentIndex = 0;
+        }
+        let nextIndex = (currentIndex + 1) % heroSlides.length;
+
+        heroSlides.forEach(function(slide, index) {
+          slide.classList.remove('is-active', 'is-next');
+          if (index === currentIndex) {
+            slide.classList.add('is-active');
+          } else if (index === nextIndex) {
+            slide.classList.add('is-next');
+          }
+        });
+
+        // Perf: mettre en pause l'intervalle quand l'onglet est caché.
+        let heroFlipTimer = null;
+        const runHeroFlip = function() {
+          if (isFlipping) {
+            return;
+          }
+
+          isFlipping = true;
+          heroMedia.classList.add('is-flipping');
+
+          window.setTimeout(function() {
+            heroSlides[currentIndex].classList.remove('is-active');
+            heroSlides[currentIndex].classList.add('is-next');
+
+            currentIndex = nextIndex;
+            nextIndex = (currentIndex + 1) % heroSlides.length;
+
+            heroSlides[currentIndex].classList.remove('is-next');
+            heroSlides[currentIndex].classList.add('is-active');
+
+            heroSlides.forEach(function(slide, index) {
+              if (index !== currentIndex && index !== nextIndex) {
+                slide.classList.remove('is-next');
+              }
+            });
+            heroSlides[nextIndex].classList.add('is-next');
+
+            heroMedia.classList.remove('is-flipping');
+            isFlipping = false;
+          }, flipDuration);
+        };
+
+        const startHeroFlipLoop = function() {
+          if (heroFlipTimer !== null) return;
+          heroFlipTimer = window.setInterval(runHeroFlip, 3000);
+        };
+
+        const stopHeroFlipLoop = function() {
+          if (heroFlipTimer === null) return;
+          window.clearInterval(heroFlipTimer);
+          heroFlipTimer = null;
+        };
+
+        startHeroFlipLoop();
+        document.addEventListener('visibilitychange', function() {
+          if (document.hidden) {
+            stopHeroFlipLoop();
+            return;
+          }
+          startHeroFlipLoop();
+        });
+      }
+
+      const carousels = Array.from(document.querySelectorAll('[data-card-carousel]'));
+      const lightbox = document.querySelector('[data-lightbox]');
+      const lightboxImage = lightbox ? lightbox.querySelector('[data-lightbox-image]') : null;
+      const lightboxCloseButtons = lightbox ? Array.from(lightbox.querySelectorAll('[data-lightbox-close]')) : [];
+      let lastZoomButton = null;
+
+      const closeLightbox = function() {
+        if (!lightbox || lightbox.hidden) {
+          return;
+        }
+        lightbox.hidden = true;
+        lightbox.setAttribute('aria-hidden', 'true');
+        if (lightboxImage) {
+          lightboxImage.src = '';
+          lightboxImage.alt = '';
+        }
+        document.body.classList.remove('lightbox-open');
+        if (lastZoomButton) {
+          lastZoomButton.focus();
+        }
+      };
+
+      const openLightbox = function(slide, zoomButton) {
+        if (!lightbox || !lightboxImage || !slide) {
+          return;
+        }
+        lightboxImage.src = slide.currentSrc || slide.src;
+        lightboxImage.alt = slide.alt || 'Image agrandie';
+        lightbox.hidden = false;
+        lightbox.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('lightbox-open');
+        lastZoomButton = zoomButton || null;
+      };
+
+      if (lightbox) {
+        lightboxCloseButtons.forEach(function(button) {
+          button.addEventListener('click', closeLightbox);
+        });
+
+        document.addEventListener('keydown', function(event) {
+          if (event.key === 'Escape') {
+            closeLightbox();
+          }
+        });
+      }
+
+      carousels.forEach(function(carousel) {
+        const carouselSlides = Array.from(carousel.querySelectorAll('[data-carousel-slide]'));
+        const previousButton = carousel.querySelector('[data-carousel-prev]');
+        const nextButton = carousel.querySelector('[data-carousel-next]');
+        const zoomButton = carousel.querySelector('[data-carousel-zoom]');
+        let activeCarouselSlide = carouselSlides.findIndex(function(slide) {
+          return slide.classList.contains('is-active');
+        });
+
+        if (activeCarouselSlide < 0) {
+          activeCarouselSlide = 0;
+        }
+
+        const showCarouselSlide = function(index) {
+          carouselSlides.forEach(function(slide, slideIndex) {
+            slide.classList.toggle('is-active', slideIndex === index);
+          });
+          activeCarouselSlide = index;
+        };
+
+        if (carouselSlides.length < 2) {
+          carousel.classList.add('is-single-slide');
+        } else {
+          showCarouselSlide(activeCarouselSlide);
+
+          if (previousButton) {
+            previousButton.addEventListener('click', function() {
+              const previousIndex = (activeCarouselSlide - 1 + carouselSlides.length) % carouselSlides.length;
+              showCarouselSlide(previousIndex);
+            });
+          }
+
+          if (nextButton) {
+            nextButton.addEventListener('click', function() {
+              const nextIndex = (activeCarouselSlide + 1) % carouselSlides.length;
+              showCarouselSlide(nextIndex);
+            });
+          }
+        }
+
+        if (zoomButton && lightbox) {
+          zoomButton.addEventListener('click', function() {
+            const activeSlide = carouselSlides[activeCarouselSlide] || carouselSlides[0];
+            openLightbox(activeSlide, zoomButton);
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+# Robots.txt - Cabinet QARIS
+# https://www.qaris.fr/robots.txt
+
+User-agent: *
+Allow: /
+
+# Pages admin interdites
+Disallow: /admin/
+Disallow: /admin/login.html
+Disallow: /admin/dashboard.html
+
+# Sitemap
+Sitemap: https://www.qaris.fr/sitemap.xml

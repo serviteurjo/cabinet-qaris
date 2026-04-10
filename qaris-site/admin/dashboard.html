@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tableau de bord administrateur du Cabinet QARIS.">
+  <meta name="robots" content="noindex, nofollow">
+
+  <title>Admin - Tableau de bord | Cabinet QARIS</title>
+
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="icon" type="image/png" href="../assets/images/logo-quaris.png">
+</head>
+<body>
+  <div class="admin-dashboard">
+    <aside class="admin-sidebar" role="complementary">
+      <div class="admin-sidebar-logo">
+        <img src="../assets/images/logo-quaris.png" alt="Logo Cabinet QARIS">
+        <span>Admin QARIS</span>
+      </div>
+
+      <nav class="admin-nav" role="navigation" aria-label="Navigation admin">
+        <a href="#contacts-section" class="admin-nav-item is-active" data-admin-nav-link>
+          <span aria-hidden="true">📧</span>
+          Contacts
+        </a>
+        <a href="#formations-section" class="admin-nav-item" data-admin-nav-link>
+          <span aria-hidden="true">🎓</span>
+          Formations
+        </a>
+        <a href="#events-section" class="admin-nav-item" data-admin-nav-link>
+          <span aria-hidden="true">📅</span>
+          Événements
+        </a>
+      </nav>
+
+      <div style="margin-top: auto; padding-top: 2rem;">
+        <button id="logout-btn" class="admin-nav-item admin-logout-action" style="width: 100%; background: rgba(255,255,255,0.1);" type="button">
+          <span aria-hidden="true">🚪</span>
+          Déconnexion
+        </button>
+      </div>
+    </aside>
+
+    <main class="admin-main" role="main">
+      <header class="admin-header admin-header-enhanced">
+        <div>
+          <h2>Bienvenue dans l'espace Admin QARIS</h2>
+          <p style="color: var(--text-medium); font-size: 0.9rem;">Dashboard dynamique, sécurisé et temps réel</p>
+        </div>
+
+        <div class="admin-header-actions">
+          <span id="admin-connection-badge" class="status-badge status-active">Connecté</span>
+          <span id="admin-email" style="color: var(--text-medium);">admin@qaris.fr</span>
+          <button id="logout-btn-header" class="btn btn-secondary btn-sm admin-logout-action" type="button">
+            Déconnexion
+          </button>
+        </div>
+      </header>
+
+      <section class="admin-stats" aria-labelledby="stats-title">
+        <h2 id="stats-title" class="sr-only">Statistiques</h2>
+
+        <article class="admin-stat-card">
+          <div class="admin-stat-value" id="stat-contacts">0</div>
+          <div class="admin-stat-label">Messages contact</div>
+        </article>
+
+        <article class="admin-stat-card">
+          <div class="admin-stat-value" id="stat-formations">0</div>
+          <div class="admin-stat-label">Inscriptions formations</div>
+        </article>
+
+        <article class="admin-stat-card">
+          <div class="admin-stat-value" id="stat-event-registrations">0</div>
+          <div class="admin-stat-label">Inscriptions événements</div>
+        </article>
+
+        <article class="admin-stat-card">
+          <div class="admin-stat-value" id="stat-catalog-events">0</div>
+          <div class="admin-stat-label">Éléments catalogue</div>
+        </article>
+      </section>
+
+      <section id="contacts-section" class="section-sm admin-section" aria-labelledby="contacts-title">
+        <div class="admin-section-head">
+          <h3 id="contacts-title" style="color: var(--color-primary);">Messages Contact</h3>
+        </div>
+
+        <div class="admin-toolbar" role="group" aria-label="Filtres messages contact">
+          <input id="contacts-search" class="admin-control admin-control-input" type="search" placeholder="Rechercher nom ou email..." autocomplete="off">
+          <select id="contacts-sort" class="admin-control admin-control-select" aria-label="Tri des messages contact">
+            <option value="date_desc">Date : récent → ancien</option>
+            <option value="date_asc">Date : ancien → récent</option>
+          </select>
+        </div>
+
+        <div class="admin-table-wrapper">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Nom</th>
+                <th scope="col">Email</th>
+                <th scope="col">Téléphone</th>
+                <th scope="col">Message</th>
+                <th scope="col">Statut</th>
+                <th scope="col">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="contacts-tbody"></tbody>
+          </table>
+        </div>
+
+        <div class="admin-pagination" id="contacts-pagination">
+          <button type="button" class="btn btn-secondary btn-sm" id="contacts-prev">Précédent</button>
+          <span id="contacts-page-info">Page 1 / 1</span>
+          <button type="button" class="btn btn-secondary btn-sm" id="contacts-next">Suivant</button>
+        </div>
+      </section>
+
+      <section id="formations-section" class="section-sm admin-section" aria-labelledby="formations-title">
+        <div class="admin-section-head">
+          <h3 id="formations-title" style="color: var(--color-primary);">Inscriptions Formations</h3>
+        </div>
+
+        <div class="admin-toolbar" role="group" aria-label="Filtres inscriptions formations">
+          <input id="formations-search" class="admin-control admin-control-input" type="search" placeholder="Rechercher nom ou contact..." autocomplete="off">
+          <select id="formations-filter" class="admin-control admin-control-select" aria-label="Filtrer par formation">
+            <option value="all">Toutes les formations</option>
+          </select>
+          <select id="formations-sort" class="admin-control admin-control-select" aria-label="Tri des inscriptions formations">
+            <option value="date_desc">Date : récent → ancien</option>
+            <option value="date_asc">Date : ancien → récent</option>
+          </select>
+          <button id="formations-export-csv" class="btn btn-secondary btn-sm" type="button">Exporter CSV</button>
+        </div>
+
+        <div class="admin-table-wrapper">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Nom</th>
+                <th scope="col">Email/Téléphone</th>
+                <th scope="col">Téléphone</th>
+                <th scope="col">Formation</th>
+                <th scope="col">Référence paiement</th>
+                <th scope="col">Statut</th>
+                <th scope="col">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="formations-tbody"></tbody>
+          </table>
+        </div>
+
+        <div class="admin-pagination" id="formations-pagination">
+          <button type="button" class="btn btn-secondary btn-sm" id="formations-prev">Précédent</button>
+          <span id="formations-page-info">Page 1 / 1</span>
+          <button type="button" class="btn btn-secondary btn-sm" id="formations-next">Suivant</button>
+        </div>
+      </section>
+
+      <section id="events-section" class="section-sm admin-section" aria-labelledby="events-title">
+        <div class="admin-section-head">
+          <h3 id="events-title" style="color: var(--color-primary);">Inscriptions Événements</h3>
+        </div>
+
+        <div class="admin-toolbar" role="group" aria-label="Filtres inscriptions événements">
+          <input id="events-search" class="admin-control admin-control-input" type="search" placeholder="Rechercher nom ou contact..." autocomplete="off">
+          <select id="events-filter" class="admin-control admin-control-select" aria-label="Filtrer par événement">
+            <option value="all">Tous les événements</option>
+          </select>
+          <select id="events-sort" class="admin-control admin-control-select" aria-label="Tri des inscriptions événements">
+            <option value="date_desc">Date : récent → ancien</option>
+            <option value="date_asc">Date : ancien → récent</option>
+          </select>
+          <button id="events-export-csv" class="btn btn-secondary btn-sm" type="button">Exporter CSV</button>
+        </div>
+
+        <div class="admin-table-wrapper">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Nom</th>
+                <th scope="col">Email/Téléphone</th>
+                <th scope="col">Téléphone</th>
+                <th scope="col">Événement</th>
+                <th scope="col">Référence paiement</th>
+                <th scope="col">Statut</th>
+                <th scope="col">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="events-registrations-tbody"></tbody>
+          </table>
+        </div>
+
+        <div class="admin-pagination" id="events-pagination">
+          <button type="button" class="btn btn-secondary btn-sm" id="events-prev">Précédent</button>
+          <span id="events-page-info">Page 1 / 1</span>
+          <button type="button" class="btn btn-secondary btn-sm" id="events-next">Suivant</button>
+        </div>
+
+        <div class="admin-section-head" style="margin-top: 2rem;">
+          <h3 style="color: var(--color-primary);">Gestion du Catalogue</h3>
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; justify-content: flex-end;">
+            <button class="btn btn-secondary btn-sm" id="refresh-catalog-btn" type="button">
+              <span aria-hidden="true">⟳</span> Actualiser le catalogue
+            </button>
+            <button class="btn btn-primary btn-sm" id="add-event-btn" type="button">
+              <span aria-hidden="true">+</span> Ajouter un événement
+            </button>
+          </div>
+        </div>
+
+        <div class="admin-table-wrapper">
+          <table class="admin-table" id="catalog-events-table">
+            <thead>
+              <tr>
+                <th scope="col">Titre</th>
+                <th scope="col">Type</th>
+                <th scope="col">Date</th>
+                <th scope="col">Prix</th>
+                <th scope="col">Statut</th>
+                <th scope="col">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="catalog-events-tbody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="event-modal" class="hidden" role="dialog" aria-modal="true" aria-labelledby="event-modal-title">
+    <div class="modal-overlay"></div>
+    <div class="modal-content" style="max-width: 600px;">
+      <button class="modal-close" aria-label="Fermer">&times;</button>
+      <h3 id="event-modal-title">Ajouter un événement</h3>
+      <form id="event-form">
+        <div class="form-group">
+          <label for="event-title" class="form-label">Titre *</label>
+          <input type="text" id="event-title" name="title" class="form-input" required>
+        </div>
+        <div class="grid grid-2">
+          <div class="form-group">
+            <label for="event-type" class="form-label">Type *</label>
+            <select id="event-type" name="type" class="form-select" required>
+              <option value="formation">Formation</option>
+              <option value="atelier">Atelier</option>
+              <option value="evenement">Événement</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="event-price" class="form-label">Prix (€) *</label>
+            <input type="number" id="event-price" name="price" class="form-input" min="0" required>
+          </div>
+        </div>
+        <div class="grid grid-2">
+          <div class="form-group">
+            <label for="event-start-date" class="form-label">Date de début *</label>
+            <input type="date" id="event-start-date" name="startDate" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label for="event-end-date" class="form-label">Date de fin</label>
+            <input type="date" id="event-end-date" name="endDate" class="form-input">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="event-description" class="form-label">Description</label>
+          <textarea id="event-description" name="description" class="form-textarea" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="event-image-file" class="form-label">Image de l'événement</label>
+          <input type="file" id="event-image-file" name="imageFile" class="form-input" accept="image/*">
+          <input type="hidden" id="event-image-url" name="imageUrl">
+          <p style="font-size: 0.85rem; color: var(--text-medium); margin-top: 0.5rem;">
+            Formats acceptés : JPG, PNG, WEBP. Taille max : 5 MB.
+          </p>
+          <div id="event-image-preview-wrapper" class="hidden" style="margin-top: 0.75rem;">
+            <img id="event-image-preview" src="" alt="Aperçu de l'image sélectionnée" style="width: 100%; max-width: 280px; border-radius: var(--radius-sm); border: 1px solid var(--bg-rose-soft);">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="event-status" class="form-label">Statut</label>
+          <select id="event-status" name="status" class="form-select">
+            <option value="active">Actif</option>
+            <option value="inactive">Inactif</option>
+          </select>
+        </div>
+        <input type="hidden" id="event-id" name="eventId">
+        <div style="display: flex; gap: 1rem;">
+          <button type="button" class="btn btn-secondary" style="flex: 1;" id="cancel-event-btn">Annuler</button>
+          <button type="submit" class="btn btn-primary" style="flex: 1;">Enregistrer</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="../js/config.js" type="module"></script>
+  <script src="../js/supabaseClient.js" type="module"></script>
+  <script src="../js/adminAuth.js" type="module"></script>
+  <script src="../js/adminDashboard.js" type="module"></script>
+</body>
+</html>
