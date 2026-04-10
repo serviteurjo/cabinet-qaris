@@ -1,5 +1,5 @@
 # Robots.txt - Cabinet QARIS
-# https://www.qaris.fr/robots.txt
+# https://cabinetqaris.com/robots.txt
 
 User-agent: *
 Allow: /
@@ -10,4 +10,4 @@ Disallow: /admin/login.html
 Disallow: /admin/dashboard.html
 
 # Sitemap
-Sitemap: https://www.qaris.fr/sitemap.xml
+Sitemap: https://cabinetqaris.com/sitemap.xml
